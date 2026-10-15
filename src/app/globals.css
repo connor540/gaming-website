@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  min-height: calc(100vh - 72px);
+}
+
+.prose {
+  @apply text-slate-200 leading-7;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  @apply mt-8 mb-4 font-bold text-white;
+}
+
+.prose p,
+.prose ul,
+.prose ol,
+.prose blockquote {
+  @apply my-4;
+}
+
+.prose ul,
+.prose ol {
+  @apply pl-6;
+}
+
+.prose li {
+  @apply my-2;
+}
+
+.prose a {
+  @apply text-violet-400 underline;
+}
+
+.prose strong {
+  @apply text-white;
+}
+
+.prose code {
+  @apply rounded bg-slate-800 px-2 py-1 text-violet-300;
+}
+
+.prose pre {
+  @apply my-6 overflow-x-auto rounded-xl bg-slate-900 p-4 text-sm text-slate-200;
+}
+
+.card {
+  @apply rounded-2xl border border-slate-800 bg-slate-900/80 shadow-soft;
+}
